@@ -1,10 +1,15 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const db =require('./config/connection');
+
+//requiring models
+const { User, Thought} = require('./models');    
 
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const connectionStringURI = `mongodb://127.0.0.1:27017`;
+// middleware 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(require('./routes'));
 
-const client = new MongoClient(connectionStringURI);
