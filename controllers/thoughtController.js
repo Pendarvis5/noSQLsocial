@@ -28,7 +28,7 @@ const thought_controller = {
             });
     },
     
-    newThought({ body }, res){
+    createThought({ body }, res){
         Thought.create(body)
         .then(({ _id }) => {
             return User.findOneAndUpdate(
@@ -81,7 +81,7 @@ const thought_controller = {
         })
         .catch(err => res.json(err));
     },
-    newReaction({ params, body }, res) {
+    createReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
             { $push: { reactions: body } },

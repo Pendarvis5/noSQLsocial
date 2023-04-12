@@ -44,7 +44,7 @@ const schema = new Schema({
 
 
 
-Schema.virtual('friendCount').get(function () {
+schema.virtual('friendCount').get(function () {
     return this.friend.reduce((total, user) => total + user.friends.length + 1, 0);
 });
 
