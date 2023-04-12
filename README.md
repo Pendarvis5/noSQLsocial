@@ -9,7 +9,6 @@ The challenge is to create a database for the client operating as a Social Media
 
 - [Installation](#Installation)
 - [Visuals](#Visuals)
-- [Usage](#Usage-information)
 - [Video Walkthrough](#video-walkthrough)
 - [Contributions](#contributions)
 
@@ -22,12 +21,9 @@ NPM i for the following modules
 
 
 
-## Visuals
-
-coming soon....
+## Visuals (Code Snippet)
 
 
-## Usage Information
 
 
 
