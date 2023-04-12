@@ -1,6 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
 
-
+//defining a schema
 const reactionSchema = new Schema(
     {
         reactionId: {
@@ -51,9 +51,13 @@ const reactionSchema = new Schema(
         }
     )
 
+    //virtual method
+
 thoughtSchema.virtual("reactionCount").get(function() {
     return this.reactions.length;
 });
+
+//compile the models
 
 const Thought = model ('Thought', thoughtSchema)
 
