@@ -19,8 +19,7 @@ NPM i for the following modules
 - mongoose @ 6.9.2
 
 ## Visuals (Code Snippet)
-
-image.png
+<img width="955" alt="image" src="https://user-images.githubusercontent.com/118090944/231958274-ff3bbdf6-ae58-426b-bc10-205ac8b71cb7.png">
 
 ## Video Walkthrough
 
